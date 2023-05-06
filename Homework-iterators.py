@@ -65,11 +65,11 @@ def test_2():
 
     assert isinstance(flat_generator(list_of_lists_1), types.GeneratorType)
     
-    for i in FlatIterator(list_of_lists_1):
+    for i in flat_generator(list_of_lists_1):
         print(i)
 
 
 
 if __name__ == '__main__':
-    test_1()
-    # test_2()
+    # test_1()
+    test_2()
